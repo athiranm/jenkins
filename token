@@ -16,3 +16,8 @@ java -jar agent.jar -url http://35.91.138.155:8080/ -secret 755858a136a011851ace
 echo dac7ee91873af30434646fe90decd2980e5d8910c53d77d1d61c564579067887 > secret-file
 curl -sO http://35.91.138.155:8080/jnlpJars/agent.jar
 java -jar agent.jar -url http://35.91.138.155:8080/ -secret @secret-file -name test -webSocket -workDir "/home/jenkins"
+
+
+
+curl -sO http://35.91.138.155:8080/jnlpJars/agent.jar
+java -jar agent.jar -url http://35.91.138.155:8080/ -secret dac7ee91873af30434646fe90decd2980e5d8910c53d77d1d61c564579067887 -name test -webSocket -workDir "/home/jenkins"
